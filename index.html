@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link href="http://fonts.googleapis.com/css?family=Cookie|Open+Sans:400,700" rel="stylesheet">
+		<link rel="stylesheet" href="stylesheets/style.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	</head>
+	<body ng-app="teste">
+		<div class="panel panel-primary"> 
+		 	<div class="panel-heading"> 
+	    		<h1 class="panel-title">Se cadastre aqui</h1>
+	    	</div>
+			<div class="panel-body">
+				<form name='addUserForm' ng-controller="AddUserController">
+					<div ng-show='message'>{{message}}</div>
+					<div class='divtext'>Nome: <input class ='divinput' name='firstName' ng-model='user.first' required></div>
+					<div class='divtext'>Sobrenome: <input class ='divinput' ng-model='user.last' required></div>
+					<div class='divtext'>E-mail: <input class ='divinput' type='email' ng-model='user.email' required></div>
+					<div class='divtext'>Idade: <input class ='divinput' type='number' ng-model='user.age' ng-maxlength='3' ng-min='1'></div>
+					<div> <button class='botao' ng-click='addUser()' ng-disabled='!addUserForm.$valid'>Enviar</button></div>
+				</form>
+			</div>
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+		<script src="js/controllers.js"></script>
+		<script type="text/javascript" src="https://code.jquery.com/jquery.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	</body>
+</html>

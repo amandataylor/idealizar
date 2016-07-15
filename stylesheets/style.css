@@ -1,0 +1,47 @@
+*{
+	/* margin:0;
+	padding:0;*/
+}
+
+body {
+	font: 15px/1.3 'Open Sans', sans-serif;
+	color: #5E5B64;
+	text-align: center;
+}
+
+form {
+	border-radius: 2px;
+	box-shadow: 0 1px 1px #CCC;
+	width: 640px;
+	height: 380px;
+	padding: 35px 60px;
+	margin: 80px auto;
+}
+
+h1 {
+	color: #FFF;
+	font-size: 64px;
+	font-family: 'Cookie', cursive;
+	font-weight: normal;
+	line-height: 1;
+	text-shadow: 0 3px 0 rgba(0,0,0,0.1);
+}
+
+.botao { 
+	padding: 8px 25px;
+	margin: 15px 30px;
+    float: right;
+}
+
+.divinput {
+	float: right;
+	padding: 5px;
+}
+
+.divtext {
+	padding: 15px 30px;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: left;
+
+}
